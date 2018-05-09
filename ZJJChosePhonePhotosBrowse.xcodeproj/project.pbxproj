@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89CFDFAE20A2D0710049541C /* ZJJPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CFDFAD20A2D0710049541C /* ZJJPhotoBrowserViewController.m */; };
 		89D4171B20A1A2FA007E7476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4171A20A1A2FA007E7476 /* AppDelegate.m */; };
 		89D4171E20A1A2FA007E7476 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4171D20A1A2FA007E7476 /* ViewController.m */; };
 		89D4172120A1A2FA007E7476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D4171F20A1A2FA007E7476 /* Main.storyboard */; };
 		89D4172320A1A2FA007E7476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D4172220A1A2FA007E7476 /* Assets.xcassets */; };
 		89D4172620A1A2FA007E7476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D4172420A1A2FA007E7476 /* LaunchScreen.storyboard */; };
 		89D4172920A1A2FA007E7476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D4172820A1A2FA007E7476 /* main.m */; };
+		952C1EECA0CC807302B492E1 /* Pods_ZJJChosePhonePhotosBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417B9280A3833392B3D7C848 /* Pods_ZJJChosePhonePhotosBrowse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417B9280A3833392B3D7C848 /* Pods_ZJJChosePhonePhotosBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJJChosePhonePhotosBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E7A63CEE16900479A780BB /* Pods-ZJJChosePhonePhotosBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJJChosePhonePhotosBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJJChosePhonePhotosBrowse/Pods-ZJJChosePhonePhotosBrowse.release.xcconfig"; sourceTree = "<group>"; };
+		89CFDFAC20A2D0710049541C /* ZJJPhotoBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJJPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		89CFDFAD20A2D0710049541C /* ZJJPhotoBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJJPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		89D4171620A1A2FA007E7476 /* ZJJChosePhonePhotosBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJJChosePhonePhotosBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D4171920A1A2FA007E7476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89D4171A20A1A2FA007E7476 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		89D4172520A1A2FA007E7476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D4172720A1A2FA007E7476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D4172820A1A2FA007E7476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89D4173020A1A64D007E7476 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E35C106D8ED788C465355506 /* Pods-ZJJChosePhonePhotosBrowse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJJChosePhonePhotosBrowse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJJChosePhonePhotosBrowse/Pods-ZJJChosePhonePhotosBrowse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				952C1EECA0CC807302B492E1 /* Pods_ZJJChosePhonePhotosBrowse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B22E9F30DEBE5ACB97552B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				417B9280A3833392B3D7C848 /* Pods_ZJJChosePhonePhotosBrowse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89D4170D20A1A2FA007E7476 = {
 			isa = PBXGroup;
 			children = (
 				89D4171820A1A2FA007E7476 /* ZJJChosePhonePhotosBrowse */,
 				89D4171720A1A2FA007E7476 /* Products */,
+				D08DC32F7E5D27485B9FF5EB /* Pods */,
+				4B22E9F30DEBE5ACB97552B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +81,25 @@
 				89D4171A20A1A2FA007E7476 /* AppDelegate.m */,
 				89D4171C20A1A2FA007E7476 /* ViewController.h */,
 				89D4171D20A1A2FA007E7476 /* ViewController.m */,
+				89CFDFAC20A2D0710049541C /* ZJJPhotoBrowserViewController.h */,
+				89CFDFAD20A2D0710049541C /* ZJJPhotoBrowserViewController.m */,
 				89D4171F20A1A2FA007E7476 /* Main.storyboard */,
 				89D4172220A1A2FA007E7476 /* Assets.xcassets */,
 				89D4172420A1A2FA007E7476 /* LaunchScreen.storyboard */,
 				89D4172720A1A2FA007E7476 /* Info.plist */,
 				89D4172820A1A2FA007E7476 /* main.m */,
+				89D4173020A1A64D007E7476 /* PrefixHeader.pch */,
 			);
 			path = ZJJChosePhonePhotosBrowse;
+			sourceTree = "<group>";
+		};
+		D08DC32F7E5D27485B9FF5EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E35C106D8ED788C465355506 /* Pods-ZJJChosePhonePhotosBrowse.debug.xcconfig */,
+				57E7A63CEE16900479A780BB /* Pods-ZJJChosePhonePhotosBrowse.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89D4172C20A1A2FA007E7476 /* Build configuration list for PBXNativeTarget "ZJJChosePhonePhotosBrowse" */;
 			buildPhases = (
+				C9CA489DE743B227268D484E /* [CP] Check Pods Manifest.lock */,
 				89D4171220A1A2FA007E7476 /* Sources */,
 				89D4171320A1A2FA007E7476 /* Frameworks */,
 				89D4171420A1A2FA007E7476 /* Resources */,
+				FC62690056C1A45BF8B13416 /* [CP] Embed Pods Frameworks */,
+				96BA3D02EC6DACC992242C02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +136,7 @@
 				TargetAttributes = {
 					89D4171520A1A2FA007E7476 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -137,12 +171,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96BA3D02EC6DACC992242C02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJJChosePhonePhotosBrowse/Pods-ZJJChosePhonePhotosBrowse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CA489DE743B227268D484E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC62690056C1A45BF8B13416 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJJChosePhonePhotosBrowse/Pods-ZJJChosePhonePhotosBrowse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89D4171220A1A2FA007E7476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89D4171E20A1A2FA007E7476 /* ViewController.m in Sources */,
+				89CFDFAE20A2D0710049541C /* ZJJPhotoBrowserViewController.m in Sources */,
 				89D4172920A1A2FA007E7476 /* main.m in Sources */,
 				89D4171B20A1A2FA007E7476 /* AppDelegate.m in Sources */,
 			);
@@ -276,29 +359,39 @@
 		};
 		89D4172D20A1A2FA007E7476 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E35C106D8ED788C465355506 /* Pods-ZJJChosePhonePhotosBrowse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B77E2S42YJ;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZJJChosePhonePhotosBrowse/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJJChosePhonePhotosBrowse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJChosePhonePhotosBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7924872b-9eca-4c9f-95c3-dd04898d20aa";
+				PROVISIONING_PROFILE_SPECIFIER = FengPuAllMobileTestProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		89D4172E20A1A2FA007E7476 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E7A63CEE16900479A780BB /* Pods-ZJJChosePhonePhotosBrowse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B77E2S42YJ;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZJJChosePhonePhotosBrowse/PrefixHeader.pch";
 				INFOPLIST_FILE = ZJJChosePhonePhotosBrowse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJChosePhonePhotosBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7924872b-9eca-4c9f-95c3-dd04898d20aa";
+				PROVISIONING_PROFILE_SPECIFIER = FengPuAllMobileTestProfile;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
