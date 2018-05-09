@@ -8,8 +8,14 @@
 
 #import "ZJJPhotoBrowserViewController.h"
 
+/**
+ 首次进来如果 _firstTitleNull 为 YES , 则表示只有一张照片，_zeroTimeInt 为 一 的时候应该返回；
+ 首次进来如果 _firstTitleNull 为 NO , 则表示有多张照片，   _zeroTimeInt    为 二 的时候应该返回
+ */
+
 @interface ZJJPhotoBrowserViewController () {
-    NSInteger _zeroTimeInt;  // 第二次为零就是应该返回的时候了
+    NSInteger _zeroTimeInt;
+    BOOL _firstTitleNull;
 }
 
 @end
@@ -22,6 +28,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _zeroTimeInt = 0;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:(UIBarButtonSystemItemTrash) target:self action:@selector(deleteClick)];
+    if ([self titleIsNull]) {
+        _firstTitleNull = YES;
+    } else {
+        _firstTitleNull = NO;
+    }
 }
 
 - (void)deleteClick {
@@ -33,13 +44,23 @@
             [self reloadData];
             if ([self.navigationItem.title isEqualToString:@"(null)"] || !self.navigationItem.title) {
                 _zeroTimeInt ++;
-                if (_zeroTimeInt == 2) {
+                if (_zeroTimeInt == 2 && !_firstTitleNull) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }
+                if (_zeroTimeInt == 1 && _firstTitleNull) {
                     [self.navigationController popViewControllerAnimated:YES];
                 }
             }
         }
     }]];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (BOOL)titleIsNull {
+    if ([self.navigationItem.title isEqualToString:@"(null)"] || !self.navigationItem.title) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
